@@ -1,0 +1,38 @@
+# This file was created Tue May 21 09:51:26 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2022.4 (-:
+# 
+# Executable:   /curc/sw/install/gromacs/2022.4/openmpi/4.1.1/gcc/11.2.0/bin/gmx
+# Data prefix:  /curc/sw/install/gromacs/2022.4/openmpi/4.1.1/gcc/11.2.0
+# Working dir:  /projects/liwh2139/LJ_potential/anthracene/get_energies
+# Command line:
+#   gmx energy -f energy_eval.edr -s energy_eval.tpr -o energy_eval.xvg
+# gmx energy is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ-14"
+@ s1 legend "LJ (SR)"
+@ s2 legend "LJ-SR:water-water"
+@ s3 legend "LJ-14:water-water"
+@ s4 legend "LJ-SR:water-anthracene"
+@ s5 legend "LJ-14:water-anthracene"
+@ s6 legend "LJ-SR:water-rest"
+@ s7 legend "LJ-14:water-rest"
+@ s8 legend "LJ-SR:anthracene-anthracene"
+@ s9 legend "LJ-14:anthracene-anthracene"
+@ s10 legend "LJ-SR:anthracene-rest"
+@ s11 legend "LJ-14:anthracene-rest"
+@ s12 legend "LJ-SR:rest-rest"
+@ s13 legend "LJ-14:rest-rest"
+    0.000000  116.130112  7432.482910    0.000000    0.000000   -4.169554  116.130112    9.171118    0.000000   -7.310062    0.000000  -87.564041    0.000000  7522.355469    0.000000
