@@ -1,0 +1,25 @@
+# This file was created Mon May 20 21:37:06 2024
+# Created by:
+#                 :-) GROMACS - gmx energy, 2024.1-Homebrew (-:
+# 
+# Executable:   /opt/homebrew/bin/../Cellar/gromacs/2024.1/bin/gmx
+# Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2024.1
+# Working dir:  /Users/lwhitm1/projects/LJ_potential/anthracene/get_energies/test/test
+# Command line:
+#   gmx energy -f test_prod_energy_groups.edr -s test_prod_energy_groups.tpr -o energy_groups.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ (SR)"
+    0.000000  7685.627441
