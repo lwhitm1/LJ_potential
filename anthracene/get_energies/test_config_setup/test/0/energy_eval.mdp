@@ -1,0 +1,26 @@
+integrator = md
+dt = 0.001
+nsteps = 0 ; No dynamics, just energy evaluation
+nstenergy = 1
+nstlog = 1
+coulombtype = PME
+rcoulomb = 1.0
+
+
+vdwtype = Cut-off ; or Switch for potential-switch
+vdw-modifier = Potential-switch
+rvdw = 1.0
+rvdw-switch = 0.8
+
+pbc = xyz
+DispCorr = EnerPres
+continuation = yes
+
+; Turn off temperature coupling (thermostat)
+tcoupl = no
+; Turn off pressure coupling (barostat)
+pcoupl = no
+
+; ENERGY GROUPS 
+energygrps          = water anthracene
+
