@@ -1,0 +1,78 @@
+                      :-) GROMACS - gmx grompp, 2022.4 (-:
+
+Executable:   /usr/local/bin/gmx
+Data prefix:  /usr/local
+Working dir:  /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/prod_out/modified_902
+Command line:
+  gmx grompp -f /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/start_files/energy_eval.mdp -c /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/prod_out/modified_902/modified_902.gro -p /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/start_files/ljs.top -o modified_902.tpr
+
+
+NOTE 1 [file /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/start_files/energy_eval.mdp, line 40]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/start_files/energy_eval.mdp]:
+  You have set rlist larger than the interaction cut-off, but you also have
+  verlet-buffer-tolerance > 0. Will set rlist using verlet-buffer-tolerance.
+
+
+NOTE 3 [file /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/start_files/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+
+NOTE 4 [file /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/start_files/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 4 notes
+
+GROMACS reminds you: "It's Not Dark Yet, But It's Getting There" (Bob Dylan)
+
+Setting the LD random seed to -939675651
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 0 Mb of data
+                      :-) GROMACS - gmx mdrun, 2022.4 (-:
+
+Executable:   /usr/local/bin/gmx
+Data prefix:  /usr/local
+Working dir:  /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/switch/prod_out/modified_902
+Command line:
+  gmx mdrun -s modified_902.tpr -dhdl dhdl_modified_902.xvg
+
+Reading file modified_902.tpr, VERSION 2022.4 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+NOTE: 24 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.144        0.010     1478.5
+                 (ns/day)    (hour/ns)
+Performance:        8.882        2.702
+
+GROMACS reminds you: "It's Not Dark Yet, But It's Getting There" (Bob Dylan)
+
