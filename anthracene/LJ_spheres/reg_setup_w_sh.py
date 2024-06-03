@@ -70,9 +70,9 @@ def modify_coordinates(input_dir, output_dir, cmd_dir, start_atom, end_atom, ite
                 commands = [
                     f"cd {output_subdir}\n",  # Change to the subdirectory
                     "\n"
-                    f"gmx grompp -f {mdp_file} -c modified_{i}.gro -p {top_file} -o modified_0.tpr\n"
+                    f"gmx grompp -f {mdp_file} -c {output_subdir}/modified_{i}.gro -p {top_file} -o modified_{i}.tpr\n"
                     "\n"
-                    f"gmx mdrun -s modified_{i}.tpr \n"
+                    f"gmx mdrun -s modified_{i}.tpr -dhdl dhdl_modified_{i}.xvg\n"
 
                 ]
 
@@ -102,8 +102,6 @@ if __name__ == "__main__":
     # Get the absolute path to the input directory
     args.input_dir = os.path.abspath(args.input_dir)
 
-    # if not os.path.isfile(args.input_dir):
-        # print(f"Error: The start directory {args.input_dir} does not exist.")
     if not os.path.isdir(args.input_dir):
         print(f"Error: The start directory {args.input_dir} does not exist.")
     elif args.start_atom < 1:
