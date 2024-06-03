@@ -1,0 +1,38 @@
+# This file was created Fri May 31 09:32:11 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2022.4 (-:
+# 
+# Executable:   /usr/local/bin/gmx
+# Data prefix:  /usr/local
+# Working dir:  /home/lindseywhitmore/projects/LJ_potential/anthracene/LJ_spheres/2switch/prod_switch_origin/modified_105
+# Command line:
+#   gmx mdrun -s modified_105.tpr -dhdl dhdl_modified_105.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 0 (K) \xl\f{} state 0: vdw-lambda = 0.0000"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} vdw-lambda = 0.0000"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.0000"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.1000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.2000"
+@ s5 legend "\xD\f{}H \xl\f{} to 0.3000"
+@ s6 legend "\xD\f{}H \xl\f{} to 0.4000"
+@ s7 legend "\xD\f{}H \xl\f{} to 0.5000"
+@ s8 legend "\xD\f{}H \xl\f{} to 0.6000"
+@ s9 legend "\xD\f{}H \xl\f{} to 0.7000"
+@ s10 legend "\xD\f{}H \xl\f{} to 0.8000"
+@ s11 legend "\xD\f{}H \xl\f{} to 0.9000"
+@ s12 legend "\xD\f{}H \xl\f{} to 1.0000"
+0.0000 1.5826312e+21 -3.5034419e+17 0.0000000 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11 -4.9696879e+11
